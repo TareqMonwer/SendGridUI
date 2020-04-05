@@ -1,0 +1,83 @@
+@import "variables";
+@import "utils";
+
+@font-face {
+  font-family: "Colfax Medium";
+  src: url("../fonts/Colfax-Medium.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+body {
+  font-family: "Colfax Medium";
+  background: #fff;
+  line-height: 1.5;
+  color: $darkgray;
+}
+
+#logo img {
+  width: 200px;
+}
+
+#title {
+  font-size: 2.2rem;
+}
+
+#section {
+  &-a {
+    .content-bottom {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      margin: 0 auto;
+
+      .contentbox {
+        margin-bottom: 2rem;
+
+        h4 {
+          margin-bottom: 1rem;
+
+          i {
+            color: $primarycolor;
+            margin-right: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+  &-b {
+    .plans {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+
+      .plan {
+        width: 50%;
+        background: $lightgray;
+        padding: 1.5rem 0 0.6rem 0;
+        text-align: center;
+        border-top: 4px solid $darkgray;
+        cursor: pointer;
+        &.active,
+        &:hover {
+          border-color: $blue;
+          background: #fff;
+        }
+      }
+      .plan:first-child {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
