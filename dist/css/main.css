@@ -24,6 +24,9 @@
   .btn:hover {
     background: #1568b4; }
 
+.btn-block {
+  display: block; }
+
 .py-1 {
   padding: 1rem 0; }
 .py-2 {
@@ -64,17 +67,21 @@
 @font-face {
   font-family: "Colfax Medium";
   src: url("../fonts/Colfax-Medium.otf"); }
-* {
+*,
+ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+ul {
+  list-style: none; }
 
 p {
   font-weight: 100;
   font-size: 0.8rem; }
 
 body {
-  font-family: "Colfax Medium";
+  font-family: "Roboto", sans-serif;
   background: #fff;
   line-height: 1.5;
   color: #294661; }
@@ -115,5 +122,54 @@ body {
       background: #fff; }
   #section-b .plans .plan:first-child {
     margin-right: 0.5rem; }
+#section-c {
+  padding: 1rem 0 5rem 0;
+  text-align: center; }
+  #section-c p:first-child {
+    text-transform: uppercase; }
+  #section-c .plans-wraper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-top: 3rem;
+    text-align: justify; }
+    #section-c .plans-wraper .plan {
+      box-shadow: rgba(0, 23, 62, 0.2) 0px 7px 11px -4px, #a8b9d5 0px 0px 1px 0px; }
+      #section-c .plans-wraper .plan-head {
+        padding: 1rem;
+        text-align: center; }
+      #section-c .plans-wraper .plan-mid {
+        text-align: center;
+        padding: 1rem; }
+        #section-c .plans-wraper .plan-mid .btn {
+          margin-left: 0;
+          background: #3368fa; }
+      #section-c .plans-wraper .plan ul {
+        padding: 1rem; }
+        #section-c .plans-wraper .plan ul li {
+          line-height: 1.5;
+          margin-bottom: 1rem;
+          color: #a7a7a7;
+          display: flex;
+          align-items: center;
+          font-size: 1rem; }
+          #section-c .plans-wraper .plan ul li img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px; }
+    #section-c .plans-wraper .plan:first-child .plan-head,
+    #section-c .plans-wraper .plan:last-child .plan-head {
+      background: #e6eefd; }
+      #section-c .plans-wraper .plan:first-child .plan-head h1,
+      #section-c .plans-wraper .plan:last-child .plan-head h1 {
+        color: #002ca6; }
+    #section-c .plans-wraper .plan:nth-child(2) .plan-head {
+      background: #e0ffef; }
+      #section-c .plans-wraper .plan:nth-child(2) .plan-head h1 {
+        color: #006631; }
+    #section-c .plans-wraper .plan:nth-child(3) .plan-head {
+      background: #fff7e5; }
+      #section-c .plans-wraper .plan:nth-child(3) .plan-head h1 {
+        color: #996b13; }
 
 /*# sourceMappingURL=main.css.map */
